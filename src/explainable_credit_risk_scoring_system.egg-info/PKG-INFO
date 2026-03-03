@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: explainable-credit-risk-scoring-system
+Version: 0.1.0
+Summary: Explainable credit risk scoring system
+Author: Your Name
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.110
+Requires-Dist: uvicorn>=0.27
+Requires-Dist: pandas>=2.2
+Requires-Dist: numpy>=1.26
+Requires-Dist: scikit-learn>=1.4
+Requires-Dist: xgboost>=2.0
+Requires-Dist: shap>=0.45
+Requires-Dist: pydantic>=2.6
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: joblib>=1.3
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: ruff>=0.3; extra == "dev"
+Requires-Dist: mypy>=1.8; extra == "dev"
+
+# Explainable Credit Risk Scoring System
+
+Production-ready ML project scaffold with training, explainability, and API serving.
+
+## Quick start
+
+1. Create and activate a virtual environment.
+2. Install dependencies: `pip install -e .`
+3. Run API locally: `uvicorn credit_risk_scoring.app:app --reload`
+
+## Structure
+
+- `src/credit_risk_scoring/`: application package
+- `tests/`: tests
+- `notebooks/`: exploration notebooks
+- `data/`: local datasets (not committed)
+- `models/`: trained model artifacts (not committed)
+- `configs/`: configuration files
